@@ -1,0 +1,268 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body{
+ font-family: sans-serif;  
+
+}
+nav{
+ 
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0px 4px 10px rgba(0, 0,0, .3);
+  transition: all .3s;
+}
+nav .logo{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 70px;
+  padding-left: 50px;
+}
+nav ul{
+  float: right;
+  margin-right: 50px;
+  list-style-type: none;
+}
+nav ul li{
+  display: inline-block;
+  margin: 0 15px;
+  line-height: 70px;
+}
+nav ul li a{
+  color: #b51010;
+  font-weight: 600;
+  font-size: 20px;
+
+}
+li a:hover{
+  color: white;
+  transition: .2s;
+}
+.research {
+  width: 500px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #b51010;
+  background: transparent;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.submit-search{
+  width: 50px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #b51010;
+  background: transparent;
+  background-color: #b51010;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.banner {
+
+width: 100%;
+height: 100vh;
+background-size: cover;
+background-position: center;
+}
+/*best-sellers*/
+/* itemS */
+.item {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.item-category {
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+
+.item-container {
+  width: 76vw;
+  height: fit-content;
+  display: flex;
+  margin: auto;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.item-container::-webkit-scrollbar {
+  display: none;
+}
+
+.item-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 450px;
+  margin-right: 40px;
+
+}
+
+.item-image {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border: 1px solid rgb(26, 26, 26);
+}
+
+.item-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discount-tag {
+  position: absolute;
+  background: #292929;
+  padding: 5px;
+  border-radius: 5px;
+  color: #d93939;
+  right: 10px;
+  top: 10px;
+  text-transform: capitalize;
+}
+
+.card-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+  border: 1px solid rgb(26, 26, 26);
+}
+
+.item-card:hover .card-btn {
+  opacity: 1;
+}
+
+.card-btn:hover {
+  background: #ff7d7d;
+  color: #fff;
+  border: 1px solid #ff7d7d;
+}
+
+.item-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.item-brand {
+  text-transform: uppercase;
+}
+
+.item-short-description {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.actual-price {
+  margin-left: 20px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}

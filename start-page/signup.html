@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+<div id="signup" class="modal">
+  <span onclick="window.location.href = 'index.html'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" method="post" action="./phpfiles/signup.php">
+    <div class="container">
+      <h1 class="title-text">Sign Up</h1>
+        <hr>
+        <label for="Username" class="text"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+
+      <label for="email" class="text"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw" class="text"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat" class="text"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px" class="text"> Remember me
+      </label>
+
+      <p class="text">You already have an account? <a href="./login.html" style="color:rgb(104, 0, 0)">LOGIN</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="window.location.href = './index.html'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn" name="signup" >SIGN UP</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

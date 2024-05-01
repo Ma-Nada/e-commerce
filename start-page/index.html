@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevigation-menue-bar</title>
+    <link rel="stylesheet" href="style.css"> <script src="./script.js"></script>
+</head>
+<body>
+    <nav>
+        <label for="" class="logo">DesignX</label>
+        <ul>
+            <li>   <input class="research" placeholder="Search.."><input type="submit" value="GO" class="submit-search" ></li>
+        <li>
+            <li><a href="#">Home</a></li>
+            <li><a href="">Categories</a></li>
+            <li><a href="">Panier</a></li>
+            <li><a href="signup.html">Login</a></li>
+        </ul>
+    </nav>
+    
+   
+    <!--Background sliding-->
+    
+
+    <div id="image" class="banner" style="background-image: url('./images/banner.slide1.jpg');"></div>
+    <script>
+        var image = document.getElementById("image");
+var currentPos = 0;
+var images = ["./images/banner.slide2.jpg", "./images/banner.slide3.jpg", "./images/banner.slide.4.jpg", "./images/banner.slide5.jpg"];
+var preloadedImages = [];
+
+// Preload images
+function preloadImages() {
+    for (var i = 0; i < images.length; i++) {
+        var img = new Image();
+        img.src = images[i];
+        preloadedImages.push(img);
+    }
+}
+
+function volgendefoto() {
+    if (++currentPos >= images.length)
+        currentPos = 0;
+
+    image.style.backgroundImage = "url('" + images[currentPos] + "')";
+}
+
+// Preload images before starting rotation
+preloadImages();
+setInterval(volgendefoto, 9000);
+
+    </script>
+    <!--best-sellers-->
+   
+    <section class="item">
+        <h2 class="item-category">best-sellers</h2>
+        <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+        <!--image 1-->
+        
+        <div class="item-container">
+            <div class="item-card">
+                <div class="item-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="images/bestseller1.jpg" class="item-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="item-info">
+                    <h2 class="item-title">title</h2>
+                    <p class="item-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <!--image 2-->
+            <div class="item-card">
+                <div class="item-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="images/bestseller2.jpg" class="item-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="item-info">
+                    <h2 class="item-title">title</h2>
+                    <p class="item-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+                <!--image 3-->
+            </div>
+            <div class="item-card">
+                <div class="item-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="images/bestseller3.jpg" class="item-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="item-info">
+                    <h2 class="item-title">title</h2>
+                    <p class="item-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <!--image 4-->
+            <div class="item-card">
+                <div class="item-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="images/bestseller4.jpg" class="item-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="item-info">
+                    <h2 class="item-title">title</h2>
+                    <p class="item-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <!--image 5-->
+            <div class="item-card">
+                <div class="item-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="images/bestseller5.jpg" class="item-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="item-info">
+                    <h2 class="item-title">title</h2>
+                    <p class="item-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <!--image 6-->
+
+            <div class="item-card">
+                <div class="item-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="images/bestseller6.jpg" class="item-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="item-info">
+                    <h2 class="item-title">title</h2>
+                    <p class="item-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <!--image 7-->
+            <div class="item-card">
+                <div class="item-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="images/bestseller7.jpg" class="item-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="item-info">
+                    <h2 class="item-title">title</h2>
+                    <p class="item-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <!--image 8-->
+            <div class="item-card">
+                <div class="item-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="images/bestseller8.jpg" class="item-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="item-info">
+                    <h2 class="item-title">title</h2>
+                    <p class="item-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+          
+</body>
+</html>
