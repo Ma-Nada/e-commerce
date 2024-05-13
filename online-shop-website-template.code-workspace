@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "online-shop-website",
+			"path": "../online-shop-website"
+		},
+		{
+			"name": "Admin-side",
+			"path": "Admin-side"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Admin-side"
+	}
+}
